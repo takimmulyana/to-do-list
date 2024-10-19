@@ -1,3 +1,4 @@
+/* Gaya umum */
 * {
   margin: 0;
   padding: 0;
@@ -49,7 +50,7 @@ input {
   outline: none;
   background: transparent;
   padding: 10px;
-  font-weight: 14px;
+  font-weight: 400;
 }
 
 button {
@@ -81,7 +82,7 @@ ul li::before {
   background-image: url(img/unchecked.png);
   background-size: cover;
   background-position: center;
-  top: 10px;
+  top: 8px;
   left: 7px;
 }
 
@@ -107,6 +108,33 @@ ul li span {
   border-radius: 50%;
 }
 
-uli li span:hover {
+ul li span:hover {
   background: #edeef0;
+}
+
+/* Media Query untuk Responsif */
+@media (max-width: 768px) {
+  .todo-app {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px 0;
+  }
+
+  ul li {
+    font-size: 14px;
+    padding: 10px 5px 12px 30px;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  input {
+    margin-bottom: 10px;
+  }
 }
